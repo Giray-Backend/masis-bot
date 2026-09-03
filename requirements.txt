@@ -4,3 +4,4 @@ openai==3.6.0
 google-genai
 anthropic
 python-dotenv==1.2.3
+aiosqlite
