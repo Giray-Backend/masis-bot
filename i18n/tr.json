@@ -1,0 +1,19 @@
+{
+    "server_only": "Bu komut sadece bir sunucuda kullanılabilir.",
+    "dm_sent": "API anahtarınızı yapılandırmanız için size bir DM gönderdim.",
+    "dm_failed": "Size DM gönderemiyorum. Lütfen sunucu üyelerinden gelen doğrudan mesajları etkinleştirin.",
+    "dm_instruction": "Lütfen **{guild_name}** için {provider} API anahtarınızı ayarlamak üzere aşağıdaki butona tıklayın.",
+    "btn_enter_key": "API Anahtarını Gir",
+    "modal_title": "API Anahtarı Kurulumu",
+    "modal_label": "{provider} API Anahtarı",
+    "modal_placeholder": "API anahtarınızı buraya yapıştırın...",
+    "key_saved": "{provider} için API anahtarı güvenli bir şekilde kaydedildi.",
+    "no_provider": "Bu sunucu için yapılandırılmış bir yapay zeka sağlayıcısı yok. Kurmak için /ai-api komutunu kullanın.",
+    "invalid_provider": "Geçersiz sağlayıcı yapılandırması.",
+    "api_error": "API anahtarınız geçersiz görünüyor, /ai-api ile tekrar bağlayın.",
+    "lang_updated": "Dil {lang} olarak güncellendi.",
+    "faq_not_found": "Bu kelimeyle eşleşen bir SSS bulunamadı.",
+    "faq_api_key": "OpenAI API anahtarını platform.openai.com, Gemini anahtarını Google AI Studio ve Claude anahtarını console.anthropic.com adresinden alabilirsiniz. Kurmak için /ai-api komutunu kullanın.",
+    "faq_providers": "Şu anda OpenAI (GPT), Google Gemini ve Anthropic Claude desteklenmektedir.",
+    "faq_errors": "Hatalar genellikle geçersiz/süresi dolmuş API anahtarları veya yetersiz kota nedeniyle oluşur. Lütfen sağlayıcınızın panelini kontrol edin ve /ai-api ile anahtarınızı tekrar girin."
+}

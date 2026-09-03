@@ -1,0 +1,19 @@
+{
+    "server_only": "このコマンドはサーバー内でのみ使用できます。",
+    "dm_sent": "APIキーを設定するためのDMを送信しました。",
+    "dm_failed": "DMを送信できません。サーバーメンバーからのダイレクトメッセージを有効にしてください。",
+    "dm_instruction": "下のボタンをクリックして、**{guild_name}** の {provider} APIキーを設定してください。",
+    "btn_enter_key": "APIキーを入力",
+    "modal_title": "APIキーの設定",
+    "modal_label": "{provider} APIキー",
+    "modal_placeholder": "ここにAPIキーを貼り付けてください...",
+    "key_saved": "{provider} のAPIキーが安全に保存されました。",
+    "no_provider": "このサーバーにはAIプロバイダーが設定されていません。/ai-apiを使用して設定してください。",
+    "invalid_provider": "無効なプロバイダー設定です。",
+    "api_error": "APIキーが無効のようです。/ai-apiで再接続してください。",
+    "lang_updated": "言語が {lang} に更新されました。",
+    "faq_not_found": "このキーワードに一致するFAQが見つかりません。",
+    "faq_api_key": "OpenAIのAPIキーはplatform.openai.com、GeminiはGoogle AI Studio、Claudeはconsole.anthropic.comで取得できます。/ai-apiで設定してください。",
+    "faq_providers": "現在、OpenAI (GPT)、Google Gemini、Anthropic Claudeがサポートされています。",
+    "faq_errors": "エラーは通常、無効/期限切れのAPIキー、またはクォータ不足が原因で発生します。プロバイダーのダッシュボードを確認し、/ai-apiでキーを再入力してください。"
+}

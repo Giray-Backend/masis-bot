@@ -1,0 +1,19 @@
+{
+    "server_only": "To polecenie może być używane tylko na serwerze.",
+    "dm_sent": "Wysłałem Ci wiadomość prywatną, aby skonfigurować Twój klucz API.",
+    "dm_failed": "Nie mogę wysłać Ci wiadomości prywatnej. Proszę, włącz wiadomości od członków serwera.",
+    "dm_instruction": "Kliknij poniższy przycisk, aby ustawić klucz API {provider} dla **{guild_name}**.",
+    "btn_enter_key": "Wprowadź klucz API",
+    "modal_title": "Konfiguracja klucza API",
+    "modal_label": "Klucz API {provider}",
+    "modal_placeholder": "Wklej tutaj swój klucz API...",
+    "key_saved": "Klucz API dla {provider} został bezpiecznie zapisany.",
+    "no_provider": "Dla tego serwera nie skonfigurowano żadnego dostawcy AI. Użyj /ai-api, aby go ustawić.",
+    "invalid_provider": "Nieprawidłowa konfiguracja dostawcy.",
+    "api_error": "Twój klucz API wydaje się nieprawidłowy, połącz się ponownie za pomocą /ai-api.",
+    "lang_updated": "Język został zaktualizowany na {lang}.",
+    "faq_not_found": "Nie znaleziono pasującego FAQ dla tego słowa kluczowego.",
+    "faq_api_key": "Klucz API OpenAI możesz zdobyć na platform.openai.com, Gemini w Google AI Studio, a Claude w console.anthropic.com. Użyj /ai-api, aby go skonfigurować.",
+    "faq_providers": "Obecnie obsługiwane są OpenAI (GPT), Google Gemini oraz Anthropic Claude.",
+    "faq_errors": "Błędy zazwyczaj występują z powodu nieprawidłowych kluczy API lub braku środków. Sprawdź panel dostawcy i wprowadź klucz ponownie używając /ai-api."
+}

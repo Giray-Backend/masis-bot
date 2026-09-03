@@ -1,0 +1,19 @@
+{
+    "server_only": "Dieser Befehl kann nur auf einem Server verwendet werden.",
+    "dm_sent": "Ich habe dir eine Direktnachricht gesendet, um deinen API-Schlüssel zu konfigurieren.",
+    "dm_failed": "Ich kann dir keine Direktnachricht senden. Bitte erlaube Direktnachrichten von Servermitgliedern.",
+    "dm_instruction": "Bitte klicke auf den Button unten, um deinen {provider} API-Schlüssel für **{guild_name}** festzulegen.",
+    "btn_enter_key": "API-Schlüssel eingeben",
+    "modal_title": "API-Schlüssel Einrichtung",
+    "modal_label": "{provider} API-Schlüssel",
+    "modal_placeholder": "Füge deinen API-Schlüssel hier ein...",
+    "key_saved": "Der API-Schlüssel für {provider} wurde sicher gespeichert.",
+    "no_provider": "Für diesen Server ist kein KI-Anbieter konfiguriert. Nutze /ai-api, um einen einzurichten.",
+    "invalid_provider": "Ungültige Anbieterkonfiguration.",
+    "api_error": "Dein API-Schlüssel scheint ungültig zu sein. Verbinde dich neu mit /ai-api.",
+    "lang_updated": "Die Sprache wurde auf {lang} aktualisiert.",
+    "faq_not_found": "Kein passendes FAQ für dieses Schlüsselwort gefunden.",
+    "faq_api_key": "Du erhältst einen OpenAI-Schlüssel auf platform.openai.com, einen Gemini-Schlüssel im Google AI Studio und einen Anthropic-Schlüssel auf console.anthropic.com. Nutze /ai-api zum Einrichten.",
+    "faq_providers": "Derzeit werden OpenAI (GPT), Google Gemini und Anthropic Claude unterstützt.",
+    "faq_errors": "Fehler treten meist aufgrund ungültiger oder abgelaufener API-Schlüssel oder unzureichendem Guthaben auf. Bitte überprüfe dein Anbieter-Dashboard und gib den Schlüssel mit /ai-api neu ein."
+}

@@ -1,0 +1,6 @@
+discord.py==2.7.1
+cryptography==50.0.1
+openai==3.6.0
+google-genai
+anthropic
+python-dotenv==1.2.3

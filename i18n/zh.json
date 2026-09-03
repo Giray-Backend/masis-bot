@@ -1,0 +1,19 @@
+{
+    "server_only": "此命令必须在服务器中使用。",
+    "dm_sent": "我已向您发送私信以配置您的 API 密钥。",
+    "dm_failed": "我无法向您发送私信。请启用来自服务器成员的直接消息。",
+    "dm_instruction": "请点击下面的按钮，为 **{guild_name}** 设置您的 {provider} API 密钥。",
+    "btn_enter_key": "输入 API 密钥",
+    "modal_title": "API 密钥设置",
+    "modal_label": "{provider} API 密钥",
+    "modal_placeholder": "在此处粘贴您的 API 密钥...",
+    "key_saved": "{provider} 的 API 密钥已安全保存。",
+    "no_provider": "此服务器未配置 AI 提供商。请使用 /ai-api 进行设置。",
+    "invalid_provider": "提供商配置无效。",
+    "api_error": "您的 API 密钥似乎无效，请使用 /ai-api 重新连接。",
+    "lang_updated": "语言已更新为 {lang}。",
+    "faq_not_found": "找不到与此关键字匹配的常见问题解答。",
+    "faq_api_key": "您可以从 platform.openai.com 获取 OpenAI API 密钥，从 Google AI Studio 获取 Gemini 密钥，从 console.anthropic.com 获取 Claude 密钥。使用 /ai-api 进行设置。",
+    "faq_providers": "目前支持 OpenAI (GPT)、Google Gemini 和 Anthropic Claude。",
+    "faq_errors": "错误通常是由于无效/过期的 API 密钥或配额不足引起的。请检查您的提供商仪表板，然后使用 /ai-api 重新输入您的密钥。"
+}

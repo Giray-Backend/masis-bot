@@ -1,0 +1,19 @@
+{
+    "server_only": "This command must be used in a server.",
+    "dm_sent": "I have sent you a DM to configure your API key.",
+    "dm_failed": "I cannot send you a DM. Please enable direct messages from server members.",
+    "dm_instruction": "Please click the button below to set your {provider} API key for **{guild_name}**.",
+    "btn_enter_key": "Enter API Key",
+    "modal_title": "API Key Setup",
+    "modal_label": "{provider} API Key",
+    "modal_placeholder": "Paste your API key here...",
+    "key_saved": "API key for {provider} has been securely saved.",
+    "no_provider": "No AI provider is configured for this server. Use /ai-api to set one up.",
+    "invalid_provider": "Invalid provider configuration.",
+    "api_error": "API anahtarınız geçersiz görünüyor, /ai-api ile tekrar bağlayın.",
+    "lang_updated": "Language has been updated to {lang}.",
+    "faq_not_found": "No matching FAQ found for this keyword.",
+    "faq_api_key": "You can get an OpenAI API key from platform.openai.com, a Gemini key from Google AI Studio, and a Claude key from console.anthropic.com. Use /ai-api to set it up.",
+    "faq_providers": "Currently, OpenAI (GPT), Google Gemini, and Anthropic Claude are supported.",
+    "faq_errors": "Errors usually occur due to invalid/expired API keys or insufficient quota. Please check your provider's dashboard and re-enter your key with /ai-api."
+}
