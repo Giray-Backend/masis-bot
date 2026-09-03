@@ -3,6 +3,8 @@ import discord
 from discord.ext import commands
 from dotenv import load_dotenv
 
+import utils.db as db
+
 # Ortam değişkenlerini yükle
 load_dotenv()
 TOKEN = os.getenv("DISCORD_TOKEN")
