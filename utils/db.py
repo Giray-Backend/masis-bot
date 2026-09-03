@@ -1,9 +1,18 @@
+import os
 import aiosqlite
 
-DB_PATH = "masis.db"
+# 1. Bulut sunucusundaysak /app/data klasörünü, yereldeysek ana klasörü seç
+DATA_DIR = "/app/data" if os.path.exists("/app") else "."
+
+# 2. Eğer bu klasör fiziksel olarak yoksa, işletim sistemine zorla oluşturmasını söyle
+os.makedirs(DATA_DIR, exist_ok=True)
+
+# 3. Veritabanı yolunu belirle
+DB_PATH = os.path.join(DATA_DIR, "masis.db")
 
 async def init_db():
     async with aiosqlite.connect(DB_PATH) as db:
+        # Guilds (Sunucu) tablosu
         await db.execute("""
             CREATE TABLE IF NOT EXISTS guilds (
                 guild_id INTEGER PRIMARY KEY,
@@ -12,6 +21,8 @@ async def init_db():
                 language TEXT DEFAULT 'en'
             )
         """)
+        
+        # FAQ tablosu
         await db.execute("""
             CREATE TABLE IF NOT EXISTS faq_entries (
                 id INTEGER PRIMARY KEY AUTOINCREMENT,
@@ -20,6 +31,18 @@ async def init_db():
             )
         """)
         await db.commit()
+
+        # Varsayılan SSS (FAQ) verilerini ekleme (Eğer tablo boşsa)
+        cursor = await db.execute("SELECT COUNT(*) FROM faq_entries")
+        count = (await cursor.fetchone())[0]
+        if count == 0:
+            initial_faqs = [
+                ("api key anahtar al nasıl", "faq_api_key"),
+                ("sağlayıcı provider openai gemini hangi destek", "faq_providers"),
+                ("hata error geçersiz invalid çalışmıyor", "faq_errors")
+            ]
+            await db.executemany("INSERT INTO faq_entries (keywords, answer_key) VALUES (?, ?)", initial_faqs)
+            await db.commit()
 
 async def get_guild(guild_id: int):
     async with aiosqlite.connect(DB_PATH) as db:
@@ -73,14 +96,3 @@ async def get_all_faqs():
         db.row_factory = aiosqlite.Row
         cursor = await db.execute("SELECT * FROM faq_entries")
         return await cursor.fetchall()
-
-        cursor = await db.execute("SELECT COUNT(*) FROM faq_entries")
-        count = (await cursor.fetchone())[0]
-        if count == 0:
-            initial_faqs = [
-                ("api key anahtar al nasıl", "faq_api_key"),
-                ("sağlayıcı provider openai gemini hangi destek", "faq_providers"),
-                ("hata error geçersiz invalid çalışmıyor", "faq_errors")
-            ]
-            await db.executemany("INSERT INTO faq_entries (keywords, answer_key) VALUES (?, ?)", initial_faqs)
-            await db.commit()
